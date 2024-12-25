@@ -1,0 +1,28 @@
+<ol>
+  @for(student of students; track $index){
+  <li>
+    Name: {{ student.name }}, age: {{ student.age }}. City: {{ student.city }}
+  </li>
+  }
+</ol>
+<p>
+  Контекстні змінні: всередині &#64;for content ми маємо багато змінних, які ми
+  можемо використовувати:
+</p>
+<img
+  src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*5Ur9zSsF7YN6v1dzk9w2IQ.png"
+  alt=""
+/>
+<p>
+  &#64;empty block : цей блок необов’язковий, ми можемо додати його відразу
+  після &#64;for блоку, він буде показаний, коли колекція порожня:
+</p>
+<ol>
+  @for(pupil of pupils; track $index){
+  <li>
+    {{ pupil }}
+  </li>
+  }@empty {
+  <p>Учнів немає.</p>
+  }
+</ol>

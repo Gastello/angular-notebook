@@ -1,0 +1,19 @@
+html {
+  padding: 10px;
+}
+.router {
+  background-color: gainsboro;
+  li {
+    list-style-type: none;
+    &:hover {
+      background: rgb(240, 240, 240);
+    }
+    a {
+      color: black;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 5px;
+      display: block;
+    }
+  }
+}

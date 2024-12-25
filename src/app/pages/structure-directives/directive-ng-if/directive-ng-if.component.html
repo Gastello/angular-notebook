@@ -1,0 +1,6 @@
+@if(isTextVisible){
+<p>Hello, Max!</p>
+}
+<button (click)="changeText()">
+  {{ isTextVisible ? visibleText : unvisibleText }}
+</button>
