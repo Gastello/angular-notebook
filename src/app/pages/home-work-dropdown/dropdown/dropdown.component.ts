@@ -16,15 +16,15 @@ export class DropdownComponent {
     if (event.currentTarget === event.target) this.isActive = !this.isActive;
   };
 
-  closeList = (event: Event): void => {
+  itemClicked = (event: Event) => {
+    this.changeSelectedItem(event);
+    this.closeList();
+  };
+  closeList = (): void => {
     this.isActive = false;
   };
   changeSelectedItem = (event: Event): void => {
     let chosenElement = event.target as Element;
     this.selectedItem = +chosenElement.id;
-  };
-  itemClicked = (event: Event) => {
-    this.changeSelectedItem(event);
-    this.closeList(event);
   };
 }
