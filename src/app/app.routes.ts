@@ -7,6 +7,7 @@ import { StructureDirectivesComponent } from './pages/structure-directives/struc
 import { AttributeDirectivesComponent } from './pages/attribute-directives/attribute-directives.component';
 import { PipesComponent } from './pages/pipes/pipes.component';
 import { HomeWorkButtonComponent } from './pages/home-work-button/home-work-button.component';
+import { HomeWorkDropdownComponent } from './pages/home-work-dropdown/home-work-dropdown.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -17,4 +18,5 @@ export const routes: Routes = [
   { path: 'attribute-directives', component: AttributeDirectivesComponent },
   { path: 'pipes', component: PipesComponent },
   { path: 'home-work-button', component: HomeWorkButtonComponent },
+  { path: 'home-work-dropdown', component: HomeWorkDropdownComponent },
 ];

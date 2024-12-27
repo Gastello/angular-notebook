@@ -1,0 +1,18 @@
+<div class="drop-down">
+  <div class="drop-down__selected" (click)="toggleList($event)">
+    {{ listOfItems[selectedItem] }}
+  </div>
+  <div class="{{ isActive ? 'drop-down__list_active' : 'drop-down__list' }}">
+    <ul class="drop-down__list-elements">
+      @for(item of listOfItems; track $index){
+      <li
+        class="drop-down__list-element"
+        (click)="itemClicked($event)"
+        [id]="$index"
+      >
+        {{ item }}
+      </li>
+      }
+    </ul>
+  </div>
+</div>

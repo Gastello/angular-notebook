@@ -1,0 +1,41 @@
+.drop-down {
+  position: relative;
+  width: 200px;
+  cursor: pointer;
+  // .drop-down__selected
+
+  &__selected {
+    padding: 5px 20px;
+    border: 1px solid black;
+  }
+
+  // .drop-down__list
+
+  &__list {
+    position: absolute;
+    width: 100%;
+    display: none;
+  }
+  &__list_active {
+    display: block;
+  }
+
+  // .drop-down__list-elements
+
+  &__list-elements {
+    list-style: none;
+    border: 1px solid black;
+  }
+
+  // .drop-down__list-element
+  &__list-element {
+    padding: 5px 20px;
+    &:hover {
+      cursor: pointer;
+      background-color: beige;
+    }
+  }
+  &__list-element:not(:last-child) {
+    border-bottom: 1px solid black;
+  }
+}
