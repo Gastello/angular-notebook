@@ -1,0 +1,8 @@
+<app-my-button
+  (passButtonChangeFunction)="passedButtonChangeFunction($event)"
+></app-my-button>
+<app-my-form [changeButtonStyle]="changeButtonStyle"></app-my-form>
+
+<hr>
+<app-button-test size="large" [color]="colorFromHome"></app-button-test>
+<button (click)='changeColor()'>Change color</button>

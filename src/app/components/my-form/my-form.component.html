@@ -1,24 +1,29 @@
 <div class="form-options">
-    <select class="form-options__font-size">
-        <option value="16px">16px</option>
-        <option value="24px">24px</option>
-        <option value="36px">36px</option>
-        <option value="48px">48px</option>
-    </select>
-    <select class="form-options__color">
-        <option value="black">black</option>
-        <option value="blue">blue</option>
-        <option value="red">red</option>
-        <option value="green">green</option>
-    </select>
-    <select class="form-options__background">
-        <option value="white">white</option>
-        <option value="yellow">yellow</option>
-        <option value="gray">gray</option>
-        <option value="pink">pink</option>
-    </select>
-    <div class="form-options__text">
-        <input type="text" placeholder="Button text" class="form-options__text-input">
-        <button (click)="changeStyle()">OK</button>
-    </div>
+  <select class="form-options__font-size" [(ngModel)]="fontSizeSelectValue">
+    <option value="16px">16px</option>
+    <option value="24px">24px</option>
+    <option value="36px">36px</option>
+    <option value="48px">48px</option>
+  </select>
+  <select class="form-options__color" [(ngModel)]="colorSelectValue">
+    <option value="black">black</option>
+    <option value="blue">blue</option>
+    <option value="red">red</option>
+    <option value="green">green</option>
+  </select>
+  <select class="form-options__background" [(ngModel)]="backgroundSelectValue">
+    <option value="white">white</option>
+    <option value="yellow">yellow</option>
+    <option value="gray">gray</option>
+    <option value="pink">pink</option>
+  </select>
+  <div class="form-options__text">
+    <input
+      type="text"
+      placeholder="Button text"
+      class="form-options__text-input"
+      [(ngModel)]="textInputValue"
+    />
+    <button (click)="buttonClicked()">OK</button>
+  </div>
 </div>

@@ -4,6 +4,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { MainCommandsComponent } from './pages/main-commands/main-commands.component';
 import { InterpolationComponent } from './pages/interpolation/interpolation.component';
 import { StructureDirectivesComponent } from './pages/structure-directives/structure-directives.component';
+import { AttributeDirectivesComponent } from './pages/attribute-directives/attribute-directives.component';
+import { PipesComponent } from './pages/pipes/pipes.component';
+import { HomeWorkButtonComponent } from './pages/home-work-button/home-work-button.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -11,5 +14,7 @@ export const routes: Routes = [
   { path: 'input-output-page', component: InputOutputComponent },
   { path: 'interpolation', component: InterpolationComponent },
   { path: 'structure-directives', component: StructureDirectivesComponent },
-
+  { path: 'attribute-directives', component: AttributeDirectivesComponent },
+  { path: 'pipes', component: PipesComponent },
+  { path: 'home-work-button', component: HomeWorkButtonComponent },
 ];

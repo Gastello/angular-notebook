@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { ButtonTestComponent } from "../../components/button-test/button-test.component";
 
 @Component({
   selector: 'app-interpolation',
-  imports: [],
+  imports: [ButtonTestComponent],
   templateUrl: './interpolation.component.html',
   styleUrl: './interpolation.component.scss',
 })
