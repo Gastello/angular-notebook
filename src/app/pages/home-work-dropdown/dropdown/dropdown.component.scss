@@ -12,12 +12,12 @@
   // .drop-down__list
 
   &__list {
-    position: absolute;
     width: 100%;
     display: none;
   }
   &__list_active {
     display: block;
+    position: absolute;
   }
 
   // .drop-down__list-elements
@@ -25,6 +25,7 @@
   &__list-elements {
     list-style: none;
     border: 1px solid black;
+    background-color: white;
   }
 
   // .drop-down__list-element
