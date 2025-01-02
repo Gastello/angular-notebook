@@ -8,6 +8,8 @@ import { AttributeDirectivesComponent } from './pages/attribute-directives/attri
 import { PipesComponent } from './pages/pipes/pipes.component';
 import { HomeWorkButtonComponent } from './pages/home-work-button/home-work-button.component';
 import { HomeWorkDropdownComponent } from './pages/home-work-dropdown/home-work-dropdown.component';
+import { NgModelComponent } from './pages/ng-model/ng-model.component';
+import { ConstructorNgoninitNgondestroyComponent } from './pages/constructor-ngoninit-ngondestroy/constructor-ngoninit-ngondestroy.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -19,4 +21,6 @@ export const routes: Routes = [
   { path: 'pipes', component: PipesComponent },
   { path: 'home-work-button', component: HomeWorkButtonComponent },
   { path: 'home-work-dropdown', component: HomeWorkDropdownComponent },
+  { path: 'ng-model', component: NgModelComponent },
+  { path: 'constructor-ngoninit-ngondestroy', component: ConstructorNgoninitNgondestroyComponent },
 ];
