@@ -1,0 +1,12 @@
+<!-- #1 -->
+<!-- <div class="card" *ngIf="users && users.length">
+    <ng-container *ngFor="let user of users">
+      <app-user [user]="user"></app-user>
+    </ng-container>
+  </div> -->
+
+<div class="card">
+  <ng-container *ngFor="let user of users$ | async">
+    <app-user [user]="user"></app-user>
+  </ng-container>
+</div>
