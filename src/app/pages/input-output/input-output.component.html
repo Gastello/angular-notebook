@@ -1,1 +1,2 @@
-Works
+<app-child-component [textFromParent]="textFromParent" (sendTextToParent)="takeTextFromChild($event)"></app-child-component>
+<p>{{textFromChild}}</p>
