@@ -14,6 +14,7 @@ import { ChildComponentComponent } from './child-component/child-component.compo
 export class InputOutputComponent {
   textFromParent = 'Hello, Child!';
   textFromChild = '';
+
   takeTextFromChild(text: string) {
     this.textFromChild = text;
   }
