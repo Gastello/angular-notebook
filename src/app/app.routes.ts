@@ -11,6 +11,8 @@ import { HomeWorkDropdownComponent } from './pages/home-work-dropdown/home-work-
 import { NgModelComponent } from './pages/ng-model/ng-model.component';
 import { ConstructorNgoninitNgondestroyComponent } from './pages/constructor-ngoninit-ngondestroy/constructor-ngoninit-ngondestroy.component';
 import { GetDataFromApiComponent } from './pages/get-data-from-api/get-data-from-api.component';
+import { ServicesComponent } from './pages/services/services.component';
+import {HomeWorkServicesComponent} from './pages/home-work-services/home-work-services.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -25,4 +27,7 @@ export const routes: Routes = [
   { path: 'ng-model', component: NgModelComponent },
   { path: 'constructor-ngoninit-ngondestroy', component: ConstructorNgoninitNgondestroyComponent },
   { path: 'get-data-from-api', component: GetDataFromApiComponent },
+  { path: 'services', component: ServicesComponent },
+  { path: 'homeservices', component: ServicesComponent },
+  { path: 'home-services', component: HomeWorkServicesComponent },
 ];

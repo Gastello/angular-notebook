@@ -7,7 +7,7 @@ import {
 
 @Component({
   selector: 'app-home',
-  imports: [MyButtonComponent, ButtonTestComponent],
+  imports: [],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

@@ -3,7 +3,7 @@ import { ButtonTestComponent } from "../../components/button-test/button-test.co
 
 @Component({
   selector: 'app-interpolation',
-  imports: [ButtonTestComponent],
+  imports: [],
   templateUrl: './interpolation.component.html',
   styleUrl: './interpolation.component.scss',
 })

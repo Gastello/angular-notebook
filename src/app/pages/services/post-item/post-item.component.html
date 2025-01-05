@@ -1,0 +1,12 @@
+<div class="post">
+  <span class="post__title">{{post.title}}</span>
+  <span class="post__content">{{post.body}}</span>
+  <span class="post__comments" (click)="isCommentsVisible=!isCommentsVisible">{{ isCommentsVisible?'Hide comments':('Show ' + commentsCount + ' comments...') }}</span>
+  @if (isCommentsVisible) {
+    @if (comments$ | async; as comments) {
+      @for (comment of comments; track comment.id) {
+        <app-comment [comment]="comment"></app-comment>
+      }
+    }
+  }
+</div>

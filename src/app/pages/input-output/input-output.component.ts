@@ -7,7 +7,7 @@ import { ChildComponentComponent } from './child-component/child-component.compo
 
 @Component({
   selector: 'app-input-output',
-  imports: [MyFormComponent, MyButtonComponent, ChildComponentComponent],
+  imports: [ChildComponentComponent],
   templateUrl: './input-output.component.html',
   styleUrl: './input-output.component.scss',
 })

@@ -1,0 +1,5 @@
+@if(posts$ | async; as posts){
+    @for(post of posts; track post.id){
+      <app-post-item [post]="post"></app-post-item>
+    }
+}
