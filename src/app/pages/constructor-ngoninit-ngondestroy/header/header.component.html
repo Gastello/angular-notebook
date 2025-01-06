@@ -1,1 +1,5 @@
-<p>{{text}}</p>
+<div>
+  <p>{{ text }}</p>
+  <app-header-child [headerChildText]="headerChildText"></app-header-child>
+  <button (click)="changeHeaderChildText()">Change headerChildText</button>
+</div>

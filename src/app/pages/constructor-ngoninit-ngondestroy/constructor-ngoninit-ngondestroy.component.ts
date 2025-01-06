@@ -12,4 +12,9 @@ export class ConstructorNgoninitNgondestroyComponent {
   // ! Check Console!
   text: string = 'Hello, world!'
   isHeaderVisible:boolean = true;
+
+  changeContent(){
+    console.log('%cContent changed!', 'color:green');
+    this.text = 'Content changed!'
+  }
 }
