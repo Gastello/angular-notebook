@@ -1,0 +1,48 @@
+<div [formGroup]="myForm" class="form">
+  <div class="input">
+    <label for="login">Login:</label>
+    <input type="text" id="login" formControlName="login">
+    @if(!myForm.controls.login.valid && myForm.controls.login.touched){
+      <small>Invalid value!</small>
+    }
+  </div>
+  <div class="input">
+    <label for="email">Email:</label>
+    <input type="email" id="email" formControlName="email">
+    @if(!myForm.controls.email.valid){
+      <small>Invalid value!</small>
+    }
+  </div>
+  <div class="input">
+    <label for="password">Password:</label>
+    <input type="password" id="password" formControlName="password">
+    @if(!myForm.controls.password.valid && myForm.controls.password.touched){
+      <small>Invalid value!</small>
+    }
+  </div>
+  <button (click)="handleValues()" [disabled]="!myForm.valid">Send values</button>
+</div>
+<div class="form" [formGroup]="validatorsForm">
+  <h2 class="header">Custom validators</h2>
+  <div class="input">
+    <label for="mail">Mail:</label>
+    <input type="text" id="mail" formControlName="mail">
+    @if(!validatorsForm.controls.mail.valid && validatorsForm.controls.mail.touched){
+      <small>Invalid value!</small>
+    }
+  </div>
+  <div class="input">
+    <label for="password_one">Password:</label>
+    <input type="password" id="password_one" formControlName="password_one">
+  </div>
+  <div class="input">
+    <label for="password_two">Password:</label>
+    <input type="password" id="password_two" formControlName="password_two">
+  </div>
+  <div>
+    @if(validatorsForm.errors?.['PasswordDoNotMatch']){
+      <small>Passwords don't match!</small>
+    }
+  </div>
+  <button (click)="handleCustomValues()" [disabled]="!validatorsForm.valid">Send values</button>
+</div>

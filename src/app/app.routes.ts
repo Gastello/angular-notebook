@@ -13,6 +13,7 @@ import { ConstructorNgoninitNgondestroyComponent } from './pages/constructor-ngo
 import { GetDataFromApiComponent } from './pages/get-data-from-api/get-data-from-api.component';
 import { ServicesComponent } from './pages/services/services.component';
 import {HomeWorkServicesComponent} from './pages/home-work-services/home-work-services.component';
+import {ReactiveFormsComponent} from './pages/reactive-forms/reactive-forms.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -29,5 +30,6 @@ export const routes: Routes = [
   { path: 'get-data-from-api', component: GetDataFromApiComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'homeservices', component: ServicesComponent },
-  { path: 'home-services', component: HomeWorkServicesComponent },
+  { path: 'homework-services', component: HomeWorkServicesComponent },
+  { path: 'reactive-forms', component: ReactiveFormsComponent },
 ];
