@@ -1,0 +1,17 @@
+<div class="homeworkForm" [formGroup]="myReactiveForm">
+  <input type="text" formControlName="nameAndSurname">
+  <select name="" id="select" formArrayName="subjects" formControlName="selectedSubject">
+    @for(subject of subjects.controls; track $index){
+      @if(subject.value==dropDownSelectedSubject){
+        <option selected>{{subject.value}}</option>
+      }
+      @else{
+        <option>{{subject.value}}</option>
+      }
+    }
+  </select>
+  <div>
+    <input type="checkbox" id="homeworkFormCheckbox" formControlName="isPassed"> <label for="homeworkFormCheckbox">Is passed?</label>
+  </div>
+  <button (click)="sendItems()">Send</button>
+</div>

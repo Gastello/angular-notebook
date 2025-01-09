@@ -1,0 +1,18 @@
+.homeworkForm{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+  border: 1px solid black;
+  border-radius: 15px;
+  input, select, label{
+    font-size: 16px;
+  }
+  &>*:not(:last-child){
+    margin-bottom: 20px;
+  }
+  &>button{
+    align-self: stretch;
+    font-size: 20px;
+  }
+}

@@ -14,6 +14,7 @@ import { GetDataFromApiComponent } from './pages/get-data-from-api/get-data-from
 import { ServicesComponent } from './pages/services/services.component';
 import {HomeWorkServicesComponent} from './pages/home-work-services/home-work-services.component';
 import {ReactiveFormsComponent} from './pages/reactive-forms/reactive-forms.component';
+import {HomeWorkReactiveFormsComponent} from './pages/home-work-reactive-forms/home-work-reactive-forms.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -32,4 +33,5 @@ export const routes: Routes = [
   { path: 'homeservices', component: ServicesComponent },
   { path: 'homework-services', component: HomeWorkServicesComponent },
   { path: 'reactive-forms', component: ReactiveFormsComponent },
+  { path: 'homework-reactive-forms', component: HomeWorkReactiveFormsComponent },
 ];
