@@ -14,14 +14,6 @@ export class ManageFormService {
 
   constructor() { }
 
-  checker(){
-    console.log('%cChecker() - data from service', 'color: yellow')
-    console.log(this.nameAndSurname);
-    console.log(this.subjectsObject);
-    console.log(this.isPassed);
-    console.log('%c-----------------------', 'color: yellow')
-  }
-
   public getNameAndSurname(): string {
     return this.nameAndSurname;
   }
