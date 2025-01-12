@@ -1,0 +1,8 @@
+<h1>Async pipe: {{exampleObservable$ | async}}</h1>
+@if(exampleObservable2$ | async; as data){
+  <h1>Prev: {{data.prev}} Current: {{data.current}} Next: {{data.next}}</h1>
+}
+<app-observable-child [currentValue]="(exampleObservable2$ | async).current"></app-observable-child>
+
+<h1>{{examplePromise$ | async}}</h1>
+<app-observable-child [currentValue]="examplePromise$ | async"></app-observable-child>
