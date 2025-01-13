@@ -16,6 +16,9 @@ import {HomeWorkServicesComponent} from './pages/home-work-services/home-work-se
 import {ReactiveFormsComponent} from './pages/reactive-forms/reactive-forms.component';
 import {HomeWorkReactiveFormsComponent} from './pages/home-work-reactive-forms/home-work-reactive-forms.component';
 import {ObservableComponent} from './pages/observable/observable.component';
+import {
+  SubjectAndHotObservableComponent
+} from './pages/subject-and-hot-observable/subject-and-hot-observable.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -36,4 +39,5 @@ export const routes: Routes = [
   { path: 'reactive-forms', component: ReactiveFormsComponent },
   { path: 'homework-reactive-forms', component: HomeWorkReactiveFormsComponent },
   { path: 'rxjs-observable', component: ObservableComponent },
+  { path: 'subject-and-hot-observable', component: SubjectAndHotObservableComponent },
 ];
