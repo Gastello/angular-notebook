@@ -19,6 +19,7 @@ import {ObservableComponent} from './pages/observable/observable.component';
 import {
   SubjectAndHotObservableComponent
 } from './pages/subject-and-hot-observable/subject-and-hot-observable.component';
+import {SignalsComponent} from './pages/signals/signals.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -40,4 +41,5 @@ export const routes: Routes = [
   { path: 'homework-reactive-forms', component: HomeWorkReactiveFormsComponent },
   { path: 'rxjs-observable', component: ObservableComponent },
   { path: 'subject-and-hot-observable', component: SubjectAndHotObservableComponent },
+  { path: 'signals', component: SignalsComponent },
 ];
