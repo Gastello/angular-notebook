@@ -1,0 +1,45 @@
+<p><b>ng-container</b> — це спеціальний елемент в Angular, який не створює власний DOM-елемент, але дозволяє групувати в шаблоні кілька елементів або директиви без додавання зайвих тегів в результаті рендерингу.</p>
+
+<p>Основні властивості ngContainer:</p>
+<ul>
+  <li>Не відображається в DOM.</li>
+  <li>Використовується для обгортання елементів в шаблоні, коли необхідно застосувати директиви або логіку без створення додаткових HTML-елементів.</li>
+  <li>Вигідно використовується при застосуванні структурних директив, таких як *ngIf, *ngFor тощо.</li>
+</ul>
+<p>
+  <b>ng-template</b> — це директива в Angular, яка дозволяє створювати шаблони, які не рендеряться одразу, але можуть бути відображені або використані пізніше за допомогою інших директив чи механізмів, таких як *ngIf, *ngFor, чи ngTemplateOutlet.
+</p>
+<p>Основні властивості ngTemplate:</p>
+<ul>
+  <li>Шаблон не рендериться відразу.</li>
+  <li>Його можна рендерити за запитом або використовуючи директиви, такі як ngIf, ngFor, ngSwitch тощо.</li>
+  <li>Виглядає як звичайний контейнер, але сам по собі не створює елементи в DOM до тих пір, поки не буде використаний.</li>
+</ul>
+<hr>
+<ul>
+  <ng-container *ngFor="let item of array">
+    <li>Array item #{{item}}</li>
+  </ng-container>
+  <!--ng-template-->
+  <ng-container *ngTemplateOutlet='nameOfTemplate'></ng-container>
+
+  @if(isShow){
+    <ng-container *ngTemplateOutlet="showText"></ng-container>
+  }
+  <!--  $implicit для незаданої назви змінної (let-text)-->
+  <ng-container *ngTemplateOutlet="variables;
+  context: {$implicit: 'Text', nameOfVariable: 'Lorem Ipsum'}"></ng-container>
+</ul>
+
+<ng-template #nameOfTemplate>
+  <h2>Hello, ng-template!</h2>
+</ng-template>
+
+<ng-template #showText>
+  <h2>Hello from boolean!</h2>
+</ng-template>
+
+<ng-template #variables let-text let-someText="nameOfVariable">
+  <p>{{text}}</p>
+  <p>{{someText}}</p>
+</ng-template>

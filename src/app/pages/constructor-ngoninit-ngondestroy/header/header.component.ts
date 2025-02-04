@@ -35,7 +35,7 @@ export class HeaderComponent {
 
   ngAfterContentInit(){
     // will be "Hello, World!"
-    console.log('#4 - Наступним викликається ngAfterContentInit. Після прогрузки контенту, що знаходиться всередині скобок данного компонента (app-header)');
+    console.log('#4 - Наступним викликається ngAfterContentInit. Після прогрузки контенту, що знаходиться всередині скобок даного компонента (app-header)');
   }
 
   ngAfterContentChecked(){
