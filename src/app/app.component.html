@@ -1,8 +1,9 @@
-<h1>Angular Notebook</h1>
+<h1 class='logo' (click)="toggleNav()">Angular Notebook</h1>
+@if(isNavVisible){
 <nav>
   <ul class="router">
     <li>
-      <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page"
+      <a routerLink="/"  ariaCurrentWhenActive="page"
         >Головна</a
       >
     </li>
@@ -168,5 +169,6 @@
     </li>
   </ul>
 </nav>
+}
 <!-- The routed views render in the <router-outlet>-->
 <router-outlet></router-outlet>

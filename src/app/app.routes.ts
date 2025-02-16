@@ -1,27 +1,27 @@
 import { Routes } from '@angular/router';
-import { InputOutputComponent } from './pages/input-output/input-output.component';
-import { HomeComponent } from './pages/home/home.component';
-import { MainCommandsComponent } from './pages/main-commands/main-commands.component';
-import { InterpolationComponent } from './pages/interpolation/interpolation.component';
-import { StructureDirectivesComponent } from './pages/structure-directives/structure-directives.component';
-import { AttributeDirectivesComponent } from './pages/attribute-directives/attribute-directives.component';
-import { PipesComponent } from './pages/pipes/pipes.component';
-import { HomeWorkButtonComponent } from './pages/home-work-button/home-work-button.component';
-import { HomeWorkDropdownComponent } from './pages/home-work-dropdown/home-work-dropdown.component';
-import { NgModelComponent } from './pages/ng-model/ng-model.component';
-import { ConstructorNgoninitNgondestroyComponent } from './pages/constructor-ngoninit-ngondestroy/constructor-ngoninit-ngondestroy.component';
-import { GetDataFromApiComponent } from './pages/get-data-from-api/get-data-from-api.component';
-import { ServicesComponent } from './pages/services/services.component';
-import {HomeWorkServicesComponent} from './pages/home-work-services/home-work-services.component';
-import {ReactiveFormsComponent} from './pages/reactive-forms/reactive-forms.component';
-import {HomeWorkReactiveFormsComponent} from './pages/home-work-reactive-forms/home-work-reactive-forms.component';
-import {ObservableComponent} from './pages/observable/observable.component';
+import { InputOutputComponent } from './pages/07-input-output/input-output.component';
+import { HomeComponent } from './pages/00-tasks-in-progress/home.component';
+import { MainCommandsComponent } from './pages/01-main-commands/main-commands.component';
+import { InterpolationComponent } from './pages/03-interpolation/interpolation.component';
+import { StructureDirectivesComponent } from './pages/04-structure-directives/structure-directives.component';
+import { AttributeDirectivesComponent } from './pages/05-attribute-directives/attribute-directives.component';
+import { PipesComponent } from './pages/06-pipes/pipes.component';
+import { HomeWorkButtonComponent } from './pages/home-work-1-button/home-work-button.component';
+import { HomeWorkDropdownComponent } from './pages/home-work-2-dropdown/home-work-dropdown.component';
+import { NgModelComponent } from './pages/08-ng-model/ng-model.component';
+import { ConstructorNgoninitNgondestroyComponent } from './pages/09-constructor-ngoninit-ngondestroy/constructor-ngoninit-ngondestroy.component';
+import { GetDataFromApiComponent } from './pages/11-get-data-from-api/get-data-from-api.component';
+import { ServicesComponent } from './pages/12-services/services.component';
+import {HomeWorkServicesComponent} from './pages/home-work-3-services/home-work-services.component';
+import {ReactiveFormsComponent} from './pages/13-reactive-forms/reactive-forms.component';
+import {HomeWorkReactiveFormsComponent} from './pages/home-work-4-reactive-forms/home-work-reactive-forms.component';
+import {ObservableComponent} from './pages/10-observable/observable.component';
 import {
   SubjectAndHotObservableComponent
-} from './pages/subject-and-hot-observable/subject-and-hot-observable.component';
-import {SignalsComponent} from './pages/signals/signals.component';
-import {NgTemplateNgContainerComponent} from './pages/ng-template-ng-container/ng-template-ng-container.component';
-import {ModulesComponent} from './pages/modules/modules.component';
+} from './pages/14-subject-and-hot-observable/subject-and-hot-observable.component';
+import {SignalsComponent} from './pages/15-signals/signals.component';
+import {NgTemplateNgContainerComponent} from './pages/16-ng-template-ng-container/ng-template-ng-container.component';
+import {ModulesComponent} from './pages/02-modules/modules.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -37,7 +37,6 @@ export const routes: Routes = [
   { path: 'constructor-ngoninit-ngondestroy', component: ConstructorNgoninitNgondestroyComponent },
   { path: 'get-data-from-api', component: GetDataFromApiComponent },
   { path: 'services', component: ServicesComponent },
-  { path: 'homeservices', component: ServicesComponent },
   { path: 'homework-services', component: HomeWorkServicesComponent },
   { path: 'reactive-forms', component: ReactiveFormsComponent },
   { path: 'homework-reactive-forms', component: HomeWorkReactiveFormsComponent },

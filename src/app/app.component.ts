@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { ModulesModule } from './pages/modules/modules.module';
+import { ModulesModule } from './pages/02-modules/modules.module';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +10,9 @@ import { ModulesModule } from './pages/modules/modules.module';
 })
 export class AppComponent {
   title = 'Angular Notebook';
+  isNavVisible = true;
+
+  toggleNav(){
+    this.isNavVisible = !this.isNavVisible;
+  }
 }
