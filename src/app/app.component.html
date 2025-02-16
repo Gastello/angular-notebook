@@ -3,12 +3,16 @@
 <nav>
   <ul class="router">
     <li>
-      <a routerLink="/"  ariaCurrentWhenActive="page"
+      <a
+        routerLink="/"
+        ariaCurrentWhenActive="page"
+        (click)="toggleNav()"
         >Головна</a
       >
     </li>
     <li>
       <a
+        (click)="toggleNav()"
         routerLink="/main-commands"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
@@ -17,6 +21,7 @@
     </li>
     <li>
       <a
+        (click)="toggleNav()"
         routerLink="/modules"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
@@ -24,6 +29,7 @@
     </li>
     <li>
       <a
+        (click)="toggleNav()"
         routerLink="/interpolation"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
@@ -32,6 +38,7 @@
     </li>
     <li>
       <a
+        (click)="toggleNav()"
         routerLink="/structure-directives"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
@@ -40,6 +47,7 @@
     </li>
     <li>
       <a
+        (click)="toggleNav()"
         routerLink="/attribute-directives"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
@@ -48,6 +56,7 @@
     </li>
     <li>
       <a
+        (click)="toggleNav()"
         routerLink="/pipes"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
@@ -57,6 +66,7 @@
     </li>
     <li>
       <a
+        (click)="toggleNav()"
         routerLink="/input-output-page"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
@@ -65,6 +75,7 @@
     </li>
     <li>
       <a
+        (click)="toggleNav()"
         routerLink="/ng-model"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
@@ -73,14 +84,16 @@
     </li>
     <li>
       <a
+        (click)="toggleNav()"
         routerLink="/constructor-ngoninit-ngondestroy"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
-        >Lifecycle</a
+        >Lifecycles</a
       >
     </li>
     <li>
       <a
+        (click)="toggleNav()"
         routerLink="/rxjs-observable"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
@@ -88,6 +101,7 @@
     </li>
     <li>
       <a
+        (click)="toggleNav()"
         routerLink="/get-data-from-api"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
@@ -96,6 +110,7 @@
     </li>
     <li>
       <a
+        (click)="toggleNav()"
         routerLink="/services"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
@@ -104,6 +119,7 @@
     </li>
     <li>
       <a
+        (click)="toggleNav()"
         routerLink="/reactive-forms"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
@@ -112,6 +128,7 @@
     </li>
     <li>
       <a
+        (click)="toggleNav()"
         routerLink='/subject-and-hot-observable'
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
@@ -119,6 +136,7 @@
     </li>
     <li>
       <a
+        (click)="toggleNav()"
         routerLink="/signals"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
@@ -128,6 +146,7 @@
     </li>
     <li>
       <a
+        (click)="toggleNav()"
         routerLink="/ng-template-ng-container"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
@@ -137,6 +156,7 @@
     </li>
     <li>
       <a
+        (click)="toggleNav()"
         routerLink="/home-work-button"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
@@ -145,6 +165,7 @@
     </li>
     <li>
       <a
+        (click)="toggleNav()"
         routerLink="/home-work-dropdown"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
@@ -153,6 +174,7 @@
     </li>
     <li>
       <a
+        (click)="toggleNav()"
         routerLink="/homework-services"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
@@ -161,10 +183,20 @@
     </li>
     <li>
       <a
+        (click)="toggleNav()"
         routerLink="/homework-reactive-forms"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
       >Home-Work #4</a
+      >
+    </li>
+    <li>
+      <a
+        (click)="toggleNav()"
+        routerLink="/test-field"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+      >Test Field</a
       >
     </li>
   </ul>

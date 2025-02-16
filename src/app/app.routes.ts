@@ -22,6 +22,7 @@ import {
 import {SignalsComponent} from './pages/15-signals/signals.component';
 import {NgTemplateNgContainerComponent} from './pages/16-ng-template-ng-container/ng-template-ng-container.component';
 import {ModulesComponent} from './pages/02-modules/modules.component';
+import {TestFieldComponent} from './pages/test-field/test-field.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -45,4 +46,5 @@ export const routes: Routes = [
   { path: 'signals', component: SignalsComponent },
   { path: 'ng-template-ng-container', component: NgTemplateNgContainerComponent },
   { path: 'modules', component: ModulesComponent },
+  { path: 'test-field', component: TestFieldComponent },
 ];
