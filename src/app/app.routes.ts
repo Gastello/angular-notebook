@@ -21,6 +21,7 @@ import {
 } from './pages/subject-and-hot-observable/subject-and-hot-observable.component';
 import {SignalsComponent} from './pages/signals/signals.component';
 import {NgTemplateNgContainerComponent} from './pages/ng-template-ng-container/ng-template-ng-container.component';
+import {ModulesComponent} from './pages/modules/modules.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -44,4 +45,5 @@ export const routes: Routes = [
   { path: 'subject-and-hot-observable', component: SubjectAndHotObservableComponent },
   { path: 'signals', component: SignalsComponent },
   { path: 'ng-template-ng-container', component: NgTemplateNgContainerComponent },
+  { path: 'modules', component: ModulesComponent },
 ];
